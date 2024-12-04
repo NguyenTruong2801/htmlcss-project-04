@@ -293,6 +293,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    row-gap: 146px;
 }
 
 .about__media {
@@ -427,4 +428,135 @@ a {
     top: 150px;
     right: -50px;
     z-index: -2;
+}
+
+.about__img-wrap-bottom {
+    position: relative;
+    margin-left: 0;
+    border-radius: 18px;
+    border: 2px solid #fff;
+    background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+    box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
+}
+
+.about__img-wrap-bottom::after {
+    content: none;
+}
+
+.about__img-bottom {
+    width: 100%;
+}
+
+.about__img-decor-bottom {
+    position: absolute;
+}
+
+.about__img-decor-bottom:nth-child(1) {
+    top: 46px;
+    right: -26px;
+}
+
+.about__img-decor-bottom:nth-child(2) {
+    top: -20px;
+    right: 12px;
+}
+
+.about__img-decor-bottom:nth-child(3) {
+    top: 10px;
+    right: 74px;
+}
+
+.about__img-decor-bottom:nth-child(4) {
+    top: 303px;
+    right: -28px;
+}
+
+.about__img-decor-bottom:nth-child(5) {
+    top: 350px;
+    right: 16px;
+}
+
+.about__img-decor-bottom:nth-child(6) {
+    bottom: -50px;
+    right: -34px;
+}
+
+.about__desc {
+    margin-top: 24px;
+    width: 511px;
+}
+
+.about__content-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 46px;
+    margin-top: 52px;
+}
+
+.about__content-list::after,
+.about__content-item-active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    border-radius: 1px;
+    opacity: 0.07;
+    background: #ff5b2e;
+}
+
+.about__content-item-active::after {
+    width: 100px;
+    opacity: 1;
+}
+
+.about__content-item {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+.about__content-item-desc {
+    color: #48496a;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.tab__contents {
+    margin-top: 36px;
+}
+
+.tab__content-desc {
+    width: 391px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
+}
+
+.tab__content-more {
+    text-decoration: underline;
+    display: block;
+    margin-top: 32px;
+    color: #ff5d31;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+}
+
+.tab__content-item {
+    display: none;
+}
+
+.tab__content-item-active {
+    display: block;
 }
